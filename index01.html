@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ธัญญลักษณ์ ดวงแสง - แนะนำตัว</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Kanit', 'Segoe UI', Tahoma, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      color: #4a148c;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      backdrop-filter: blur(8px);
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 26px;
+      color: #880e4f;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .id {
+      font-weight: bold;
+      color: #ad1457;
+    }
+
+    .flower {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle, #f48fb1 40%, transparent 41%);
+      border-radius: 50%;
+      box-shadow: 30px 30px 0 0 #f8bbd0, 
+                  -30px 30px 0 0 #f8bbd0,
+                  30px -30px 0 0 #f8bbd0,
+                  -30px -30px 0 0 #f8bbd0;
+      opacity: 0.4;
+      animation: spin 10s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    footer {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+  <div class="flower"></div>
+
+  <div class="card">
+    <h1>สวัสดีค่ะ — ฉันชื่อ ธัญญลักษณ์ ดวงแสง</h1>
+    <p>รหัสนักศึกษา: <span class="id">67021040</span></p>
+    <p>ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ และอยากพัฒนาเว็บไซต์ให้ใช้งานง่ายและน่ารัก</p>
+    <footer>หน้าแนะนำตัวแบบธีมชมพูพาสเทล</footer>
+  </div>
+</body>
+</html>
